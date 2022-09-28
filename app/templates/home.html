@@ -1,0 +1,6 @@
+{% extends 'base.html' %} {%load static%} {%block content%} {%for team in lp%}
+
+<ul>
+  <a href="/{{team}}">{{team}}</a>
+</ul>
+{%endfor%} {% endblock content %}

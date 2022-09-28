@@ -1,0 +1,25 @@
+body {
+  background: white;
+}
+
+/* #The nav bar at the top of my home page */
+nav h1 {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightblue;
+  color: white;
+}
+
+/* #My home introduction(Welcome to BCCA!) */
+.home_intro {
+  color: black;
+  text-align: center;
+}
+
+.home_click_links {
+  text-align: center;
+}

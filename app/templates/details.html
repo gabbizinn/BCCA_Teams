@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% load static%} {%block content %}
+<h1>{{name}}</h1>
+<p>{{des}}</p>
+<ul>
+  {% for x in members %}
+  <li>{{x}}</li>
+  {% endfor %}
+</ul>
+{%endblock content %}

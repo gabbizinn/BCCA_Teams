@@ -1,9 +1,8 @@
 {% extends "base.html" %} {% load static%} {%block content %}
-<h1>{{name}}</h1>
-<p>{{des}}</p>
-<ul>
-  {% for x in members %}
-  <li>{{x}}</li>
-  {% endfor %}
+<h1 class="title_pages">{{title}}</h1>
+<p class="card">{{des}}</p>
+<ul class="card">
+  {% for x in members %} {{x}} {% endfor %}
 </ul>
+
 {%endblock content %}

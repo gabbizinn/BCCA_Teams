@@ -3,23 +3,70 @@ body {
 }
 
 /* #The nav bar at the top of my home page */
-nav h1 {
+nav {
   display: flex;
   width: 100%;
   margin: auto;
   padding: 20px 0;
   align-items: center;
   justify-content: space-between;
-  background-color: lightblue;
-  color: white;
+  /* background-color: black; */
+}
+
+/* #The team links at the top of my home page */
+a {
+  text-decoration: none;
+}
+
+.bcca_logo {
+  width: 30%;
 }
 
 /* #My home introduction(Welcome to BCCA!) */
 .home_intro {
   color: black;
   text-align: center;
+  text-decoration: underline;
 }
 
 .home_click_links {
   text-align: center;
+}
+
+.bcca_1 {
+  align-items: center;
+  margin-left: 305px;
+  margin-top: -500px;
+}
+
+.bcca_2 {
+  align-items: center;
+  margin-left: 100px;
+}
+
+.bcca_3 {
+  align-items: center;
+  margin-left: 540px;
+  margin-top: -500px;
+}
+
+.title_pages {
+  text-align: center;
+  text-decoration: underline;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1em;
+  margin-top: 2em;
+}
+
+.card {
+  background-color: white;
+  padding: 1.7em;
+  align-items: center;
+  text-align: center;
+  border: 5px solid lightgrey;
+  border-radius: 30px;
 }

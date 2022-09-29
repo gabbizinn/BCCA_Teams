@@ -10,17 +10,20 @@
   </head>
   <body>
     <nav>
-      <h1>BCCA Team Home Page</h1>
+      <a href="http://127.0.0.1:8000/">
+        <img
+          src="{% static 'bcca_logo.png' %}"
+          class="bcca_logo"
+          alt="bcc logo picture"
+      /></a>
+
+      {%for team in lp%}
+      <ul>
+        <a href="/{{team}}">{{team}}</a>
+      </ul>
+      {%endfor%}
     </nav>
-    <h1 class="home_intro">Welcome to out Team Home Page!</h1>
-    <h5 class="home_click_links">
-      Please click one of the links below to view our teams
-    </h5>
-    <img
-      src="{% static 'bcca_logo.png' %}"
-      class="logo"
-      alt="my logo picture"
-    />
+
     {%block content%} {%endblock content%}
   </body>
 </html>
